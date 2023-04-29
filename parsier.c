@@ -48,9 +48,9 @@ int is_cmd(info_t *info, char *path)
 
  * @pathstr: the PATH string
 
- * @start: starting index
+ * @start: beginning index
 
- * @stop: stopping index
+ * @stop: end index
 
  *
 
@@ -88,7 +88,7 @@ char *dup_chars(char *pathstr, int start, int stop)
 
  * @pathstr: the PATH string
 
- * @cmd: the cmd to find
+ * @cmd: the command. to find
 
  *
 
