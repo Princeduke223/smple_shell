@@ -3,9 +3,9 @@
 
 /**
 
- * _strlen - returns the length of a string
+ * _strlen - returns the length of a strings
 
- * @s: the string whose length to check
+ * @s: the string which length to check
 
  *
 
@@ -17,7 +17,7 @@ int _strlen(char *s)
 
 {
 
-        int i = 0;
+        int ki = 0;
 
 
         if (!s)
@@ -27,16 +27,16 @@ int _strlen(char *s)
 
         while (*s++)
 
-                i++;
+                ki++;
 
-        return (i);
+        return (ki);
 
 }
 
 
 /**
 
- * _strcmp - performs lexicogarphic comparison of two strangs.
+ * _strcmp - performs simple comparison of two strings
 
  * @s1: the first strang
 
