@@ -3,7 +3,7 @@
 
 /**
 
- * bfree - frees a pointer and NULLs the address
+ * bfree - frees a pointer and NULLs its address
 
  * @ptr: address of the pointer to free
 
