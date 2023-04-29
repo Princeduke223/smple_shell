@@ -17,6 +17,12 @@
 
  */
 
+/**
+* big up ngong and my cool kids
+*
+*teremkateremka ka mono mono
+*/
+
 int is_chain(info_t *info, char *buf, size_t *p)
 
 {
@@ -67,7 +73,9 @@ int is_chain(info_t *info, char *buf, size_t *p)
         return (1);
 
 }
-
+/**
+*Comments ahead
+*/
 
 /**
 
@@ -191,7 +199,7 @@ int replace_alias(info_t *info)
 
 
 /**
-
+*mamiomio 
  * replace_vars - replaces vars in the tokenized string
 
  * @info: the parameter struct
