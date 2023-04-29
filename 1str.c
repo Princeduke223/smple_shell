@@ -5,9 +5,9 @@
 
  * _strcpy - copies a string
 
- * @dest: the destination
+ * @dest:  destination
 
- * @src: the source
+ * @src:  source
 
  *
 
@@ -19,24 +19,24 @@ char *_strcpy(char *dest, char *src)
 
 {
 
-        int i = 0;
+        int ii = 0;
 
 
         if (dest == src || src == 0)
 
                 return (dest);
 
-        while (src[i])
+        while (src[ii])
 
         {
 
-                dest[i] = src[i];
+                dest[ii] = src[ii];
 
-                i++;
+                ii++;
 
         }
 
-        dest[i] = 0;
+        dest[ii] = 0;
 
         return (dest);
 
@@ -47,11 +47,9 @@ char *_strcpy(char *dest, char *src)
 
  * _strdup - duplicates a string
 
- * @str: the string to duplicate
+ * @str: the str to be duplicated
 
- *
-
- * Return: pointer to the duplicated string
+ * Return: pointer to the duplicated str
 
  */
 
@@ -59,7 +57,7 @@ char *_strdup(const char *str)
 
 {
 
-        int length = 0;
+        int len = 0;
 
         char *ret;
 
@@ -70,17 +68,17 @@ char *_strdup(const char *str)
 
         while (*str++)
 
-                length++;
+                len++;
 
-        ret = malloc(sizeof(char) * (length + 1));
+        ret = malloc(sizeof(char) * (len+ 1));
 
         if (!ret)
 
                 return (NULL);
 
-        for (length++; length--;)
+        for (len++; len--;)
 
-                ret[length] = *--str;
+                ret[len] = *--str;
 
         return (ret);
 
@@ -91,7 +89,7 @@ char *_strdup(const char *str)
 
  * _puts - prints an input string
 
- * @str: the string to be printed
+ * @str: the str that will  be printed
 
  *
 
@@ -103,18 +101,18 @@ void _puts(char *str)
 
 {
 
-        int i = 0;
+        int ij = 0;
 
 
         if (!str)
 
                 return;
 
-        while (str[i] != '\0')
+        while (str[ij] != '\0')
 
         {
 
-                _putchar(str[i]);
+                _putchar(str[ij]);
 
                 i++;
 
@@ -125,9 +123,9 @@ void _puts(char *str)
 
 /**
 
- * _putchar - writes the character c to stdout
+ * _putchar - writes the char c to stdout
 
- * @c: The character to print
+ * @c: The char to print
 
  *
 
