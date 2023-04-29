@@ -3,7 +3,7 @@
 
 /**
 
- * _myhistory - displays the history list, one command by line, preceded
+ * _myhistory - displays the past list, one command by line, preceded
 
  *              with line numbers, starting at 0.
 
@@ -155,7 +155,7 @@ int print_alias(list_t *node)
 
 /**
 
- * _myalias - mimics the alias builtin (man alias)
+ * _myalias -  repeats (man alias)
 
  * @info: Structure containing potential arguments. Used to maintain
 
