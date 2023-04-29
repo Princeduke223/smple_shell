@@ -3,7 +3,7 @@
 
 /**
 
- * _myexit - exits the shell
+ * _myexit - exits the entire shell
 
  * @info: Structure containing potential arguments. Used to maintain
 
