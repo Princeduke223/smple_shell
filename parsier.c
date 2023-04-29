@@ -44,7 +44,7 @@ int is_cmd(info_t *info, char *path)
 
 /**
 
- * dup_chars - duplicates characters
+ * dup_chars - makes chars like them
 
  * @pathstr: the PATH string
 
@@ -64,16 +64,16 @@ char *dup_chars(char *pathstr, int start, int stop)
 
         static char buf[1024];
 
-        int i = 0, k = 0;
+        int oi = 0, ko = 0;
 
 
-        for (k = 0, i = start; i < stop; i++)
+        for (ko = 0, oi = start; oi < stop; oi++)
 
-                if (pathstr[i] != ':')
+                if (pathstr[oi] != ':')
 
-                        buf[k++] = pathstr[i];
+                        buf[ko++] = pathstr[oi];
 
-        buf[k] = 0;
+        buf[ko] = 0;
 
         return (buf);
 
@@ -82,7 +82,7 @@ char *dup_chars(char *pathstr, int start, int stop)
 
 /**
 
- * find_path - finds this cmd in the PATH string
+ * find_path - finds this command in the PATH string
 
  * @info: the info struct
 
