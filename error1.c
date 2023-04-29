@@ -3,9 +3,9 @@
 
 /**
 
- * _erratoi - converts a string to an integer
+ * _erratoi - changes data type from string to an integer
 
- * @s: the string to be converted
+ * @s: the str to be converted into an int
 
  * Return: 0 if no numbers in string, converted number otherwise
 
@@ -248,19 +248,18 @@ void remove_comments(char *buf)
 
 {
 
-        int i;
+        int zi;
 
 
-        for (i = 0; buf[i] != '\0'; i++)
+        for (zi = 0; buf[zi] != '\0'; zi++)
 
-                if (buf[i] == '#' && (!i || buf[i - 1] == ' '))
+                if (buf[zi] == '#' && (!zi || buf[zi - 1] == ' '))
 
                 {
 
-                        buf[i] = '\0';
+                        buf[zi] = '\0';
 
                         break;
 
                 }
-
 }
