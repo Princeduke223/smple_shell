@@ -3,7 +3,7 @@
 
 /**
 
- * _myenv - prints the current environment
+ * _myenv - prints the current environment,,,
 
  * @info: Structure containing potential arguments. Used to maintain
 
@@ -70,7 +70,7 @@ char *_getenv(info_t *info, const char *name)
 
  * _mysetenv - Initialize a new environment variable,
 
- *             or modify an existing one
+ *             or modify the existing one
 
  * @info: Structure containing potential arguments. Used to maintain
 
@@ -88,7 +88,7 @@ int _mysetenv(info_t *info)
 
         {
 
-                _eputs("Incorrect number of arguements\n");
+                _eputs("Incorrect No of arguements\n");
 
                 return (1);
 
@@ -105,9 +105,9 @@ int _mysetenv(info_t *info)
 
 /**
 
- * _myunsetenv - Remove an environment variable
+ * _myunsetenv - Removes an environment variable
 
- * @info: Structure containing potential arguments. Used to maintain
+ * @info: Structure containing potential arguments.always Used to maintain
 
  *        constant function prototype.
 
@@ -126,7 +126,7 @@ int _myunsetenv(info_t *info)
 
         {
 
-                _eputs("Too few arguements.\n");
+                _eputs("very few arguements!\n");
 
                 return (1);
 
@@ -146,9 +146,7 @@ int _myunsetenv(info_t *info)
 
  * populate_env_list - populates env linked list
 
- * @info: Structure containing potential arguments. Used to maintain
-
- *          constant function prototype.
+ * @info: Structure containing potential arguments. 
 
  * Return: Always 0
 
@@ -160,12 +158,12 @@ int populate_env_list(info_t *info)
 
         list_t *node = NULL;
 
-        size_t i;
+        size_t ig;
 
 
-        for (i = 0; environ[i]; i++)
+        for (ig = 0; environ[ig]; ig++)
 
-                add_node_end(&node, environ[i], 0);
+                add_node_end(&node, environ[ig], 0);
 
         info->env = node;
 
