@@ -3,9 +3,9 @@
 
 /**
 
- * add_node - adds a node to the start of the list
+ * add_node - adds a node to the start of a list
 
- * @head: address of pointer to head node
+ * @head: address/location of pointer to head node
 
  * @str: str field of node
 
@@ -67,7 +67,7 @@ list_t *add_node(list_t **head, const char *str, int num)
 
 /**
 
- * add_node_end - adds a node to the end of the list
+ * add_node_end - adds a node to the end of our list
 
  * @head: address of pointer to head node
 
@@ -184,9 +184,9 @@ size_t print_list_str(const list_t *h)
 
 /**
 
- * delete_node_at_index - deletes node at given index
+ * delete_node_at_index - deletes node at a stated  index
 
- * @head: address of pointer to first node
+ * @head: address of the pointer to first node
 
  * @index: index of node to delete
 
