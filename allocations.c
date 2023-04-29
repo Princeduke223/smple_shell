@@ -3,13 +3,13 @@
 
 /**
 
- * _memset - fills memory with a constant byte
+ * _memset - fills memory with some constant byte
 
- * @s: the pointer to the memory area
+ * @s: the ptr to the memory area
+
+* @n: the amount of bytes to be filled
 
  * @b: the byte to fill *s with
-
- * @n: the amount of bytes to be filled
 
  * Return: (s) a pointer to the memory area s
 
@@ -19,12 +19,12 @@ char *_memset(char *s, char b, unsigned int n)
 
 {
 
-        unsigned int i;
+        unsigned int ji;
 
 
-        for (i = 0; i < n; i++)
+        for (ji = 0; ji < n; ji++)
 
-                s[i] = b;
+                s[ji] = b;
 
         return (s);
 
