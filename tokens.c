@@ -2,7 +2,7 @@
 
 
 /**
-
+*hapa ni pakuharibu akili
  * **strtow - splits a string into words. Repeat delimiters are ignored
 
  * @str: the input string
@@ -18,7 +18,7 @@ char **strtow(char *str, char *d)
 
 {
 
-        int i, j, k, m, numwords = 0;
+        int i, j, kn, m, numwords = 0;
 
         char **s;
 
@@ -56,21 +56,21 @@ char **strtow(char *str, char *d)
 
                         i++;
 
-                k = 0;
+                kn= 0;
 
-                while (!is_delim(str[i + k], d) && str[i + k])
+                while (!is_delim(str[i + kn], d) && str[i + kn])
 
-                        k++;
+                        kn++;
 
-                s[j] = malloc((k + 1) * sizeof(char));
+                s[j] = malloc((kn + 1) * sizeof(char));
 
                 if (!s[j])
 
                 {
 
-                        for (k = 0; k < j; k++)
+                        for (kn = 0; kn < j; k++)
 
-                                free(s[k]);
+                                free(s[kn]);
 
                         free(s);
 
@@ -94,7 +94,8 @@ char **strtow(char *str, char *d)
 
 
 /**
-
+* ukimwi ugonjwa mbaya
+*wamaliza wanadamu
  * **strtow2 - splits a string into words
 
  * @str: the input string
