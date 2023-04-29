@@ -5,7 +5,7 @@
 
  * get_history_file - gets the history file
 
- * @info: parameter struct
+ * @info: parameter structure
 
  *
 
@@ -48,7 +48,7 @@ char *get_history_file(info_t *info)
 
 /**
 
- * write_history - creates a file, or appends to an existing file
+ * write_history - creates a file, or adds into an existing file
 
  * @info: the parameter struct
 
@@ -103,7 +103,7 @@ int write_history(info_t *info)
 
 /**
 
- * read_history - reads history from file
+ * read_history - reads history in a  file
 
  * @info: the parameter struct
 
