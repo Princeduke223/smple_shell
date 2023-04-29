@@ -3,9 +3,9 @@
 
 /**
 
- * _eputs - prints an input string
+ * _eputs - prints the input str
 
- * @str: the string to be printed
+ * @str: the str to be printed
 
  *
 
@@ -17,20 +17,20 @@ void _eputs(char *str)
 
 {
 
-        int i = 0;
+        int d = 0;
 
 
         if (!str)
 
                 return;
 
-        while (str[i] != '\0')
+        while (str[d] != '\0')
 
         {
 
-                _eputchar(str[i]);
+                _eputchar(str[d]);
 
-                i++;
+                d++;
 
         }
 
@@ -41,7 +41,7 @@ void _eputs(char *str)
 
  * _eputchar - writes the character c to stderr
 
- * @c: The character to print
+ * @c: The char to print
 
  *
 
@@ -83,9 +83,10 @@ int _eputchar(char c)
 
  * _putfd - writes the character c to given fd
 
- * @c: The character to print
 
  * @fd: The filedescriptor to write to
+
+ * @c: The character to print
 
  *
 
@@ -99,24 +100,24 @@ int _putfd(char c, int fd)
 
 {
 
-        static int i;
+        static int fi;
 
         static char buf[WRITE_BUF_SIZE];
 
 
-        if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE)
+        if (c == BUF_FLUSH || fi >= WRITE_BUF_SIZE)
 
         {
 
-                write(fd, buf, i);
+                write(fd, buf, fi);
 
-                i = 0;
+                fi = 0;
 
         }
 
         if (c != BUF_FLUSH)
 
-                buf[i++] = c;
+                buf[fi++] = c;
 
         return (1);
 
@@ -141,7 +142,7 @@ int _putsfd(char *str, int fd)
 
 {
 
-        int i = 0;
+        int qi = 0;
 
 
         if (!str)
@@ -152,7 +153,7 @@ int _putsfd(char *str, int fd)
 
         {
 
-                i += _putfd(*str++, fd);
+                qi += _putfd(*str++, fd);
 
         }
 
