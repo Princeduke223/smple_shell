@@ -5,7 +5,7 @@
 
  * hsh - main shell loop
 
- * @info: the parameter & return info struct
+ * @info: the parameter, return info struct
 
  * @av: the argument vector from main()
 
@@ -234,7 +234,7 @@ void find_cmd(info_t *info)
 
 /**
 
- * fork_cmd - forks a an exec thread to run cmd
+ * fork_cmd - forks a an executed thread to run commands
 
  * @info: the parameter & return info struct
 
