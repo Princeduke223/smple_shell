@@ -3,13 +3,13 @@
 
 /**
 
- **_strncpy - copies a string
+ **_strncpy - copies a str type
 
- *@dest: the destination string to be copied to
+ *@dest: the location string to be copied to
 
- *@src: the source string
+ *@src: the origin string
 
- *@n: the amount of characters to be copied
+ *@n: number of char to be copied
 
  *Return: the concatenated string
 
@@ -63,9 +63,9 @@ char *_strncpy(char *dest, char *src, int n)
 
  **_strncat - concatenates two strings
 
- *@dest: the first string
+ *@dest: our first string
 
- *@src: the second string
+ *@src: my  second string
 
  *@n: the amount of bytes to be maximally used
 
